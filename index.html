@@ -1,23 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Khodam Checker</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>Khodam Checker</h1>
-            <p>Check Your Khodam with Name</p>
+    <main>
+        <p class="label">#1 In Jawa</p>
+        <h1>Khodam Checker</h1>
+        <p class="sub">Masukkan namamu untuk tau khodammu.</p>
+
+        <div class="input-row">
+            <input type="text" id="nameInput" placeholder="Nama lengkap..." autocomplete="off">
+            <button id="btn" onclick="checkKhodam()">Check</button>
         </div>
-        <div class="content">
-            <input type="text" id="nameInput" placeholder="Insert your name">
-            <button onclick="checkKhodam()">Check Now</button>
-            <div id="result"></div>
-        </div>
-    </div>
+
+        <div id="thinking"></div>
+        <div id="result"></div>
+    </main>
     <script src="script.js"></script>
 </body>
 </html>
+
