@@ -14,7 +14,7 @@ const khodams = [
     'Tungsten Cube', 'Unsymmetrical Dimethylhydrazine'
 ];
 
-function hashName(name) 
+function hashName(name) { 
     const s = name.toLowerCase().trim().replace(/\s+/g, '');
     let h = 2166136261;
     for (let i = 0; i < s.length; i++) {
